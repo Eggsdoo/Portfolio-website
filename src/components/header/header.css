@@ -1,0 +1,201 @@
+header {
+    height: 100vh;
+    padding-top: 10rem;
+    overflow: hidden;
+}
+
+.header__container {
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+/* -------------------------- Typewriter effect -------------------------- */
+
+.typewriter {
+    display: inline-block;
+}
+
+#typewriter__text {
+    border-right: 2px solid transparent;
+    /* simulates the typing cursor */
+    width: 100%;
+    white-space: nowrap;
+    /* keeps text on one line */
+    overflow: hidden;
+    /* hides any overflow text */
+    animation: typing 2s steps(26), blinkCursor 1s step-end infinite alternate;
+    /* animation details */
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100
+    }
+}
+
+@keyframes blinkCursor {
+
+    0%,
+    100% {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: var(--color-primary);
+    }
+}
+
+/* ------------ hover code below will reset typewriter animation after hovering and moving cursor away ------------ */
+
+/* .typewriter:hover #typewriter__text {
+    animation: none;
+} */
+
+/* ------------Call to Action buttons------------ */
+
+.cta {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+/* ------------Social links in Header------------ */
+
+.header__socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 0;
+    bottom: 21rem;
+}
+
+.header__socials::before {
+    content: '';
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary);
+}
+
+.header__socials::after {
+    content: '';
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary);
+}
+
+/* ------------Picture in Header (Me)------------ */
+
+.me {
+    background: linear-gradient(var(--color-primary), transparent);
+    width: 22rem;
+    height: 30rem;
+    position: absolute;
+    left: calc(50% - 11rem);
+    margin-top: 4rem;
+    border-radius: 4rem 4rem 0 0;
+    overflow: hidden;
+    padding: 5rem 1.5rem 1.5rem 1.5rem;
+}
+
+/* ------------Scroll Down text------------ */
+
+.scroll__down {
+    position: absolute;
+    right: -2.3rem;
+    bottom: 23rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+/* -------------------------- MEDIA QUERIES (FOR MEDIUM DEVICES LIKE TABLETS) -------------------------- */
+
+@media screen and (max-width: 1024px) {
+    header {
+        height: 68vh;
+    }
+}
+
+/* -------------------------- MEDIA QUERIES (FOR SMALL DEVICES LIKE PHONES) -------------------------- */
+
+@media screen and (max-width: 600px) {
+    header {
+        height: 100vh;
+        padding-top: 15rem;
+    }
+
+    .header__socials,
+    .scroll__down,
+    .languages {
+        display: none;
+    }
+}
+
+/* -------------------------- Animated Slider -------------------------- */
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.languages {
+    overflow: hidden;
+    padding: 60px 0;
+    white-space: nowrap;
+    position: relative;
+    margin-right: 10rem;
+    margin-left: 10rem;
+}
+
+.languages__slide>svg {
+    width: 60px;
+    height: 40px;
+    margin: 40px 35px;
+}
+
+.languages:before,
+.languages:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+.languages:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), var(--color-bg));
+}
+
+.languages:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), var(--color-bg));
+}
+
+.languages:hover .languages__slide {
+    animation-play-state: paused;
+}
+
+.languages__slide {
+    display: inline-block;
+    animation: 10s slide infinite linear;
+}
+
+.languages__slide img {
+    height: 50px;
+    margin: 0 40px;
+}
