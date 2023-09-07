@@ -15,7 +15,7 @@ const Header = () => {
   return (
     <header id='home'>
       <div className="container header__container"> {/* General container class we will wrap everything in */}
-        <h5>Hello I'm</h5>
+        <h5>Hello I'm yes</h5>
         <h1>Usama Khan</h1>
         <div className="typewriter">
           <h5 className="text-light" id="typewriter__text">I build things for the web</h5>
