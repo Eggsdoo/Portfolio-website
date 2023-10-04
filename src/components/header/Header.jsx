@@ -40,6 +40,14 @@ const Header = () => {
             <FaNodeJs/>
             <FaJava/>
             <FaBootstrap/>
+          </div><div className="languages__slide">
+            <FaHtml5/>
+            <FaCss3Alt/>
+            <IoLogoJavascript/>
+            <FaReact/>
+            <FaNodeJs/>
+            <FaJava/>
+            <FaBootstrap/>
           </div>
         </div>
         {/* <div className="me">
