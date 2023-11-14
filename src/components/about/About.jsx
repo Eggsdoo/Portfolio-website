@@ -1,24 +1,25 @@
-import React, { useEffect, useRef } from 'react'
+import React from 'react'
 import './about.css'
 // import ME from '../../assets/me-about.png'
-import { FaAward } from 'react-icons/fa'
-import { FaUsers } from 'react-icons/fa'
-import { FaFolderOpen } from 'react-icons/fa'
-import lottie from 'lottie-web'
+// import { FaAward } from 'react-icons/fa'
+// import { FaUsers } from 'react-icons/fa'
+// import { FaFolderOpen } from 'react-icons/fa'
+// import lottie from 'lottie-web'
+// import { useEffect, useRef } from 'react'
 
 const About = () => {
 
-  const container = useRef(null)
+  // const container = useRef(null)
 
-  useEffect(() => {
-    lottie.loadAnimation({
-      container: container.current,
-      renderer: 'svg',
-      loop: true,
-      autoplay: true,
-      animationData: require('../../assets/about__me-animation.json')
-    })
-  }, [])
+  // useEffect(() => {
+  //   lottie.loadAnimation({
+  //     container: container.current,
+  //     renderer: 'svg',
+  //     loop: true,
+  //     autoplay: true,
+  //     animationData: require('../../assets/about__me-animation.json')
+  //   })
+  // }, [])
 
   return (
     <section id='about'>
@@ -27,14 +28,14 @@ const About = () => {
 
       <div className='container about__container'>
         <div className="about__me">
-          <div className="about__me-image" ref={container}>
+           <div className="about__me-image"> {/* ref={container} */}
 
             {/* <img src={ME} alt="About Snap"/>  don't need this anymore because of animation */}
           </div>
         </div>
 
         <div className="about__content">
-          <div className="about__cards">
+          {/* <div className="about__cards">
             <article className="about__card">
               <FaAward className='about__icon' />
               <h5>Experience</h5>
@@ -52,7 +53,7 @@ const About = () => {
               <h5>Projects</h5>
               <small>10+ completed</small>
             </article>
-          </div>
+          </div> */}
 
           <div className="about__info">
             <p>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;700&display=swap');
 
 * {
     margin: 0;
@@ -21,6 +21,18 @@
     --color-light: rgba(255, 255, 255, 0.6);
     --color-text: #0e1110;
 
+    /* new colors */
+    --color-background-new: #0C0C53;
+    --color-orange: #F26A02;
+    --color-blue: #000080;
+    --color-blue-accent: #4747FF;
+    --color-corn: #FFFAE3;
+    --color-text-new: #FFFAE3;
+    --color-sandy: #F69952;
+    --color-UT: #f58f41;
+
+
+
     --transition: all 400ms ease;
 
     --container-width-lg: 75%;
@@ -38,7 +50,7 @@ html {
 }
 
 body {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'IBM Plex Mono', monospace;
     background: var(--color-bg);
     color: var(--color-text);
     /* color: var(--color-white); */
@@ -90,23 +102,23 @@ a:hover {
 .btn {
     width: max-content;
     display: inline-block;
-    color: var(--color-primary);
+    color: var(--color-orange);
     padding: 0.75rem 1.2rem;
     border-radius: 0.4rem;
     cursor: pointer;
-    border: 1px solid var(--color-primary);
+    border: 1px solid var(--color-orange);
     transition: var(--transition);
 }
 
 .btn:hover {
-    background: var(--color-accent);
-    color: var(--color-text);
+    background: var(--color-corn);
+    color: var(--color-blue);
     border-color: transparent;
 }
 
 .btn-primary {
-    background-color: var(--color-primary);
-    color: var(--color-bg);
+    background-color: var(--color-orange);
+    color: var(--color-corn);
 }
 
 img {
@@ -138,5 +150,3 @@ img {
         margin-bottom: 2rem;
     }
 }
-
-/* test */
