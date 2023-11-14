@@ -37,6 +37,10 @@
 
 /* -------------------------- NEW PORTFOLIO SECTION TEMPLATE -------------------------- */
 
+#portfolio {
+    background-color: red;
+}
+
 .portfolio__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

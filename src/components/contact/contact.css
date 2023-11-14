@@ -1,40 +1,34 @@
+#contact {
+    background-color: var(--color-background-new);
+    /* margin-top: 0; */
+    padding-top: 8rem;
+}
+
 .contact__container {
-    width: 58%;
     display: grid;
-    grid-template-columns: 30% 58%;
-    gap: 5%;
+    grid-template-columns: 40% 70%;
+    padding-top: 3rem;
 }
 
-.contact__options {
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
+.contact__prompt {
+    color: var(--color-corn);
+    margin-top: 4rem;
+
+    & p {
+        margin-top: 1rem;
+    }
 }
 
-.contact__option {
-    background: var(--color-primary-variant);
-    padding: 1.2rem;
-    border-radius: 1.2rem;
-    text-align: center;
-    border: 1px solid transparent;
-    transition: var(--transition);
+.contact__links {
+    margin-top: 1rem;
+
+    & a {
+        color: var(--color-orange);
+        font-size: 2.5rem;
+        padding-right: 0.25rem;
+    }
 }
 
-.contact__option:hover {
-    background: transparent;
-    border-color: var(--color-primary-variant);
-}
-
-.contact__option-icon {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.contact__option a {
-    margin-top: 0.5rem;
-    display: inline-block;
-    font-size: 1rem;
-}
 
 /* -------------------------- FORM -------------------------- */
 
@@ -42,16 +36,16 @@ form {
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
+    margin-left: 5rem;
 }
 
 input, textarea {
-    width: 80%;
     padding: 1.5rem;
     border-radius: 0.5rem;
     background: transparent;
-    border: 2px solid var(--color-primary-variant);
+    border: 2px solid var(--color-corn);
     resize: none;
-    color: var(--color-text);
+    color: var(--color-text-new);
 }
 
 /* -------------------------- MEDIA QUERIES (FOR MEDIUM DEVICES LIKE TABLETS) -------------------------- */

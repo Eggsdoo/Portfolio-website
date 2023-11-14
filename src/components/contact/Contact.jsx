@@ -1,8 +1,8 @@
 import React from 'react'
 import './contact.css'
-import { MdEmail } from 'react-icons/md'
 import { useRef } from 'react'
 import emailjs from 'emailjs-com'
+import {FaGithubSquare, FaLinkedin} from 'react-icons/fa'
 
 const Contact = () => {
   const form = useRef();
@@ -21,21 +21,18 @@ const Contact = () => {
   };
 
   return (
-    <section id='contact'>
-      <h5>Get In Touch</h5>
-      <h2>Contact Me</h2>
+    <section id="contact">
 
       <div className="container contact__container">
-        <div className="contact__options">
-          <article className="contact__option">
-            <MdEmail className="contact__option-icon" />
-            <h4>Email</h4>
-            <h5>usamaykh@gmail.com</h5>
-            <a href="mailto:usamaykh@gmail.com">Send a message</a>
-          </article>
+        <div className="contact__prompt">
+          <h2>Get In Touch</h2>
+          <p>I'm excited to connect. Feel free to drop me a message about opportunities, collaborations, or just to say hello.</p>
+          <div className="contact__links">
+            <a href="https://github.com/Eggsdoo" rel="noreferrer" target="_blank"><FaGithubSquare/></a>
+            <a href="https://www.linkedin.com/in/uykhan/" rel="noreferrer" target="_blank"><FaLinkedin/></a>
+          </div>
         </div>
-        {/* END OF CONTACT OPTIONS  */}
-
+  
         <form ref={form} onSubmit={sendEmail}>
           <input type="text" name='name' placeholder='Your Full Name' required />
           <input type="email" name='email' placeholder='Your Email' required />
