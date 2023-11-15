@@ -91,7 +91,12 @@ section {
     color: var(--color-blue);
 }
 
+.about__content .btn-primary {
+    color: var(--color-blue);
+}
+
 .about__content .btn-primary:hover {
+    transition: var(--transition);
     background-color: var(--color-blue-accent);
     color: var(--color-text-new);
     border-color: var(--color-blue-accent);
