@@ -25,7 +25,7 @@ const Contact = () => {
 
       <div className="container contact__container">
         <div className="contact__prompt">
-          <h2>Get In Touch</h2>
+          <h2>Get in touch</h2>
           <p>I'm excited to connect. Feel free to drop me a message about opportunities, collaborations, or just to say hello.</p>
           <div className="contact__links">
             <a href="https://github.com/Eggsdoo" rel="noreferrer" target="_blank"><FaGithubSquare/></a>
