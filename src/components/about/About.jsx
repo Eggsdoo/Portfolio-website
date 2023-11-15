@@ -23,25 +23,25 @@ const About = () => {
   // <div className="about__me-image"> ref={container} </div> //
   return (
     <section id='about'>
-      <h2>Get to know me</h2>
+      {/* <h2>Get to know me</h2> */}
 
       <div className='container about__container'>
         <div className="about__me">
           <div className="wrapper">
             <div className="text">
               <div className="row">
-                <p>hello</p>
-                <p>what</p>
+                <p>Get</p>
+                <p>Let's</p>
                 {/* <p>yes</p> */}
               </div>
               <div className="row">
-                <p>again</p>
-                <p>is this</p>
+                <p>to know</p>
+                <p>connect</p>
                 {/* <p>aaaaa</p> */}
               </div>
               <div className="row">
-                <p>:|</p>
-                <p>????</p>
+                <p>me</p>
+                <p>!!!</p>
                 {/* <p>yellow</p> */}
               </div>
             </div>

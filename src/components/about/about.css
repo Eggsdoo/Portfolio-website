@@ -1,13 +1,12 @@
 #about {
     margin-top: 0;
-    padding-top: 8rem;
+    padding-top: 14rem;
     padding-bottom: 9rem;
 
     & h2 {
         color: var(--color-blue);
     }
 }
-
 
 section {
     background-color: var(--color-corn);
@@ -79,27 +78,6 @@ section {
     }
 }
 
-/* .about__me {
-    width: 100%;
-    aspect-ratio: 1/1;
-    border-radius: 2rem;
-    background: linear-gradient(45deg, transparent, var(--color-primary), transparent);
-    display: grid;
-    place-items: center;
-} */
-
-/* .about__me {
-    display: flex;
-    align-items: center;
-} */
-
-/* .about__me-image {
-    border-radius: 2rem;
-    transform: scaleX(-1);
-    width: 200px;
-    height: auto;
-} */
-
 .about__info {
     margin: 1.5rem 0 1.5rem 0;
     padding: 20px;
@@ -111,6 +89,12 @@ section {
     margin-bottom: 10px;
     font-size: 0.85rem;
     color: var(--color-blue);
+}
+
+.about__content .btn-primary:hover {
+    background-color: var(--color-blue-accent);
+    color: var(--color-text-new);
+    border-color: var(--color-blue-accent);
 }
 
 /* -------------------------- MEDIA QUERIES (FOR MEDIUM DEVICES LIKE TABLETS) -------------------------- */
@@ -137,15 +121,6 @@ section {
     .about__me {
         width: 65%;
         margin: 0 auto 3rem;
-    }
-
-    .about__me-image {
-        margin-left: -8rem;
-    }
-
-    .about__cards {
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
     }
 
     .about__content {
