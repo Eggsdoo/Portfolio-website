@@ -51,16 +51,34 @@ input, textarea {
 /* -------------------------- MEDIA QUERIES (FOR MEDIUM DEVICES LIKE TABLETS) -------------------------- */
 
 @media screen and (max-width: 1024px) {
+    #contact {
+        padding-top: 0;
+    }
+
+
     .contact__container {
         grid-template-columns: 1fr;
         gap: 2rem;
+    }
+
+    form {
+        margin-left: 0;
     }
 }
 
 /* -------------------------- MEDIA QUERIES (FOR SMALL DEVICES LIKE PHONES) -------------------------- */
 
 @media screen and (max-width: 600px) {
+    #contact {
+        padding-top: 0;
+    }
+
     .contact__container {
         width: var(--container-width-sm);
+    }
+
+    form {
+        margin-left: 0;
+        
     }
 }

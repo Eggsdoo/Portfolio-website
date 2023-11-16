@@ -138,7 +138,11 @@ header {
 
 @media screen and (max-width: 1024px) {
     header {
-        height: 68vh;
+        height: 50vh;
+    }
+
+    .languages {
+        display: none;
     }
 }
 
@@ -150,8 +154,6 @@ header {
         padding-top: 15rem;
     }
 
-    .header__socials,
-    .scroll__down,
     .languages {
         display: none;
     }

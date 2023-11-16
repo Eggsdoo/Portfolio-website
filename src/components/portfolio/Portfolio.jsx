@@ -62,20 +62,6 @@ const data = [
 const Portfolio = () => {
   return (
     <section id='portfolio'>
-
-      {/* <div className="book">
-        <div className="inner">
-          <div className="left"></div>
-          <div className="middle"></div>
-          <div className="right"></div>
-          <ul>
-            {Array.from({ length: 18 }, (_, index) => (
-              <li key={index}></li>
-            ))}
-          </ul>
-        </div>
-      </div> */}
-
       <div className="container portfolio__container">
         {
           data.map(({ id, image, title, github, demo, description }) => {
