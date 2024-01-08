@@ -18,7 +18,7 @@ const Header = () => {
       <div className="container header__container"> {/* General container class we will wrap everything in */}
         <div className="header__title">
           <h1>Hello,</h1>
-          <h1>I am Usama.</h1>
+          <h1>I am Sam.</h1>
         </div>
         <div className="typewriter">
           <h4 id="typewriter__text">A certified web applications developer</h4>

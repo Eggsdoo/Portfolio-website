@@ -51,7 +51,7 @@ const About = () => {
         <div className="about__content">
           <div className="about__info">
             <p>
-              Hello again, I'm Usama, a Toronto-based Developer with a passion for crafting user-centric web experiences.
+              Hello again, I'm Sam, a Toronto-based Developer with a passion for crafting user-centric web experiences.
             </p>
             <p>
               With over a year of experience in web development, I specialize in HTML, CSS, JavaScript, Java, and modern front-end frameworks like React. I enjoy transforming design concepts into clean, efficient, and accessible code.
